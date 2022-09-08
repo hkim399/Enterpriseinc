@@ -1,0 +1,12 @@
+﻿@using MyLibrary    <!-- 1 -->
+
+@{
+    ViewData["Title"] = "Home Page";
+    var name = Helper.Reverse("Paul");      <!-- 2 -->
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <h3>@name</h3>                          <!-- 3 -->
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
